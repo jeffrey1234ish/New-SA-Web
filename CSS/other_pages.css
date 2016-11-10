@@ -1,0 +1,158 @@
+	::selection {
+		background-color: #3fa2ff;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		outline: none;
+	}
+	body {
+		padding: 0;
+		margin: 0;
+		height: 100%;
+		background-image: url(../images/background.png);
+		background-position: center center;
+	}
+	.fixed-nav-bar {
+		position: fixed;
+		top: 0;
+	}
+	a {
+	text-decoration: none;
+	}
+	div#body {
+		margin: 0 auto;
+	}
+	div#us {
+		height: 141px;
+		line-height: 141px;
+		position: absolute;
+		width: 630px;
+		font-size: 15px;
+		display: inline;
+		color: white;
+		text-shadow: 0px 2px 3px rgb(0,0,0);
+		right: 0;
+	}
+	#nav-container {
+		position: relative;
+		width: 100%;
+		z-index: 1000;
+		/* For IE 9 or lower */
+		
+	}
+	#nav-bar {
+		/* red oringinal */
+		background-image: linear-gradient(bottom, rgb(219,129,129) 5%, rgb(189,59,59) 50%, rgb(219,129,129) 95%);
+		background-image: -o-linear-gradient(bottom, rgb(219,129,129) 5%, rgb(189,59,59) 50%, rgb(219,129,129) 95%);
+		background-image: -moz-linear-gradient(bottom, rgb(219,129,129) 5%, rgb(189,59,59) 50%, rgb(219,129,129) 95%);
+		background-image: -webkit-linear-gradient(bottom, rgb(219,129,129) 5%, rgb(189,59,59) 50%, rgb(219,129,129) 95%);
+		background-image: -ms-linear-gradient(bottom, rgb(219,129,129) 5%, rgb(189,59,59) 50%, rgb(219,129,129) 95%);
+		background-image: -webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0.05, rgb(219,129,129)),
+			color-stop(0.5, rgb(189,59,59)),
+			color-stop(0.95, rgb(219,129,129))
+		);
+		/* For IE 9 or lower */
+		background-color: rgb(189,59,59);
+		/* gray alternative */
+		/*
+		background-image: linear-gradient(bottom, rgb(222,222,222) 40%, rgb(235,235,235) 70%);
+		background-image: -o-linear-gradient(bottom, rgb(222,222,222) 40%, rgb(235,235,235) 70%);
+		background-image: -moz-linear-gradient(bottom, rgb(222,222,222) 40%, rgb(235,235,235) 70%);
+		background-image: -webkit-linear-gradient(bottom, rgb(222,222,222) 40%, rgb(235,235,235) 70%);
+		background-image: -ms-linear-gradient(bottom, rgb(222,222,222) 40%, rgb(235,235,235) 70%);
+		background-image: -webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0.4, rgb(222,222,222)),
+			color-stop(0.7, rgb(235,235,235))
+		);
+		*/
+		height: 60px;
+		border-bottom: 1px solid rgb(128,17,17);
+		border-top: 1px solid rgb(128,17,17);
+		-webkit-box-shadow: 0px 7px 10px rgb(0,0,0);
+		box-shadow: 0px 7px 10px rgb(0,0,0);
+		width: 100%;
+	}
+	.container {
+		position: relative;
+		width: 1000px;
+		margin: 0 auto;
+	}
+	#nav-bar ul#list-item-wrapper {
+		position: relative;
+		height: 100%;
+		float: left;
+		margin:0;
+		padding: 0;
+	}
+	ul li.list-item {
+ 		float: left;
+ 		display: inline-block;
+ 		color: white;
+ 		height: 60px;
+ 		background: transparent;
+ 		width: 80px;
+		text-align:center;
+ 		list-style: none;
+ 		text-decoration: none;
+		cursor: pointer;
+	}
+	i.menu-separator {
+		width: 5px;
+		height: 60px;
+		background-image: url('../images/menu_line.png');
+		float: left;
+	}
+	ul li.list-item span {
+		line-height: 60px;
+	}
+	#nav-bar ul li ul.slide-up {
+		position: absolute;
+		list-style: none;
+		padding: 20px 10px 20px 5px;
+		text-align: left;
+		border: 1px solid black;
+		background: black;
+		display: none;
+	}
+	#nav-bar ul li ul.slide-up li {
+		margin: 7px 0;
+	}
+	#nav-bar ul li ul.slide-up li a {
+		color: white;
+		text-decoration: none;
+	}
+	#nav-bar ul li ul.slide-up li a:hover {
+		color: red;
+	}
+	#nav-bar ul li ul.slide-up li a:active {
+		 position: relative;
+		 top: 1px;
+	}
+	div#content {
+		text-shadow: 0px 2px 3px black;
+		/* For IE9 or lower */
+		filter: Shadow(Color=black, Direction=90, Strength=1);
+		padding-bottom: 50px;
+		width: 1000px;
+		margin: 0 auto;
+	}
+	div#content h2 {
+		color: white;
+		font-size: 30px;
+		text-decoration: underline;
+		margin: 20px 0;
+	}
+	div#content p {
+		color: white;
+		margin: 20px 0;
+		font-size: 18px;
+	}
